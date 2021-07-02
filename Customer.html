@@ -1,0 +1,49 @@
+<html>
+    <head>
+	    <style>
+		    body{
+			    background-image:url(vcb.jpg);
+                }
+            .contain{
+			    text-align: center;
+                position:absolute;
+                top:20%;
+                left:40%;
+				background-color:white;
+				border-style: solid;
+                border-color: black;
+				padding:60px 40px 50px 40px;
+                }				
+        </style>   
+    </head>
+    <body>
+	    <form>
+		    <div Class="contain">
+			<h1>Login Form</h1>
+			<label>Name : </label>
+			<input type="text" id="name" required><br><br>
+			<label>Password : </label>
+			<input type="password" id="pass" required><br><br>
+			<input type="button" value="Login" onclick="Check()">
+			<a href='Register.html'><h2>Register</h2></a>
+			<p id="result"></p>
+			</div>
+		</form>
+	</body>
+</html>	
+<script>
+ var uname=document.getElementById("name");
+ var pword=document.getElementById("pass");
+ var result=document.getElementById("result");
+ function Check()
+ {
+    if(uname.value=="someone" && pword.value=="something")
+      location.href = "Book.html";
+    else
+	{
+      alert("database not connected");
+      alert("please enter user name as someone and password as something");	  
+	}
+ }
+</script>
+   

@@ -1,0 +1,68 @@
+<html>
+    <head>
+	    <style>
+		    body{
+			 
+			}
+          		.container{
+                position:absolute;
+                top:20%;
+                left:35%;	
+				background-color:white;
+				border-style: solid;
+                border-color: black;
+				padding:60px 80px 70px 80px;
+            }
+			#sub{
+			    text-align: center;
+              }	
+            a{
+                text-align: center;
+              }				
+        </style>   
+    </head>
+    <body>
+	    <form>
+		   <div Class="container">
+		  <label>Train Name</label>
+		  <input type="text" id="name" required><br><br>
+		  <label>Train Time</label>
+		  <input type="text" id="time" required><br><br>
+		  <label>Number of passengers</label>
+		  <input type="number" id="num" required><br><br>
+		  <label>Birth</label>
+		  <select id="birth">
+            <option>Upper</option>
+            <option>Middle</option>
+            <option>Lower</option>
+			<option>Side Lower</option>
+			<option>Side upper</option>
+          </select><br>
+		  <label>Type</label>
+		  <select id="type">
+            <option>Ac</option>
+            <option>Non Ac</option>
+          </select><br><br>
+		  <div id="sub">
+		  <input type="button" value="Submit" onclick="some()">
+		  </div>
+		  <a href="Start.html"><h2>Home</h2></a>
+		  <p id="result"></p> 
+		</form>
+	</body>
+</html>	
+<script>
+var name=document.getElementById("name");
+var time=document.getElementById("time");
+var numofp=document.getElementById("num");
+var result=document.getElementById("result");
+function some()
+ { 
+    if(name.value!=0 && time.value!=0 && numofp!=0)
+      alert("Database not connected so we are unable to fetch any info"); 	
+    else
+	{
+      alert("kindly fill each values");  
+	}
+ }
+</script>

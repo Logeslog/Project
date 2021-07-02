@@ -1,0 +1,79 @@
+<html>
+    <head>
+	    <style>
+         	body{
+			   background-image:url(water.jpg);
+            }
+			h1{
+			  position:absolute;
+              top:10%;
+              left:45%;
+			  }
+            .container{
+                position:absolute;
+                top:20%;
+                left:35%;	
+				background-color:white;
+				border-style: solid;
+                border-color: black;
+				padding:60px 80px 80px 80px;
+            }	
+            #sub{
+			   text-align: center;
+			}
+			a
+			{
+			  text-align: center;
+			 }
+        </style>   
+    </head>
+    <body>
+	    <form>
+		  <h1>Register page</h1>
+		  <div Class="container">
+		  <label>Name</label>
+		  <input type="text" id="name" required><br><br>
+		  <label>Address</label>
+		  <input type="text" id="address" required><br><br>
+		  <label>Mobile Number</label>
+		  <input type="number" id="num" required><br><br>
+		  <label>Aadhar Number</label>
+		  <input type="number" id="adnum" required><br><br>
+		  <label>State</label>
+		  <input type="text" id="state" required><br><br>
+		  <label>City</label>
+		  <input type="text" id="city" required><br><br>
+		  <label>Pin Code</label>
+		  <input type="number" id="pcode" required><br><br>
+		  <label>Password</label>
+		  <input type="password" id="pass" required><br><br>
+		  <label>Confirm Password</label>
+		  <input type="password" id="cpass" required><br><br>
+		  <div id="sub">
+		  <input type="button" value="Submit" onclick="Page()">
+		  <p id="result"></p> 
+		  </div>
+		  <a href="Customer.html"><h2>Login</h2></a>
+		  </div>
+		</form>
+	</body>
+</html>	
+<script>
+var name=document.getElementById("name");
+var address=document.getElementById("address");
+var phno=document.getElementById("num");
+var state=document.getElementById("state");
+var city=document.getElementById("city");
+var pass=document.getElementById("pass");
+var cpass=document.getElementById("cpass");
+var result=document.getElementById("result");
+function Page()
+ { 
+    if(name.value!=0 && address.value!=0 && phno.value!=0 && state.value!=0 && city.value!=0 && pass.value!=0)
+      result.innerText="Successfully Registered"; 	
+    else
+	{
+      alert("kindly fill each values");  
+	}
+ }
+</script>

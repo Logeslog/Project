@@ -1,0 +1,32 @@
+<html>
+    <head>
+	    <style>
+		body{
+		    position:absolute;
+            top:30%;
+            left:40%;
+			text-align: center;
+            }			
+        </style>   
+    </head>
+    <body>
+	    <form>
+		   <label><h2>Search your Train</h2></label>
+		   <input type="text" id="name" required><br><br>
+		   <input type="button" value="Submit" onclick="details()">
+		   <a href="Start.html"><h2>Home</h2></a><br>
+		</form>
+	</body>
+</html>	
+<script>
+ var name=document.getElementById("name");
+ function details()
+ {
+    if(name.value=="someone")
+      alert("database not connected so unable to do any searches");
+    else
+	{
+      alert("database not connected so unable to do any searches"); 
+	}
+ }
+</script>
